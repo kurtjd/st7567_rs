@@ -108,7 +108,6 @@ where
             return Err((DisplayErrors::OutOfBoundsError((x, y))));
         }
 
-        let x = constants::SCREEN_WIDTH as usize - x - 1;
         let y = constants::SCREEN_HEIGHT as usize - y - 1;
 
         let offset = ((y / 8) * constants::SCREEN_WIDTH as usize) + x; // byte index
